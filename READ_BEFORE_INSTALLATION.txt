@@ -1,0 +1,38 @@
+Using and Installing the SSL/TLS Server Certificate from this Archive
+-----
+* Contents 
+This archive bundle provides your SSL/TLS server certificate and the corresponding CA Chain ( intermediate and root certificates) in different formats. Please choose the one which works best for your environment. Each format is provided in the following folders in this archive:
+
+* pkcs7 - The SSL certificate and all intermediate and root certificates are included in a PKCS#7 bundle file with a .p7b extension.
+
+* individual - The SSL certificate and all intermediate and root certificates are provided as individual files in PEM format with the .pem extension.
+
+* all_in_one - The SSL certificate and all intermediate and root certificates are provided in a single file with each certificate in PEM format.
+
+* linux_bundle - The SSL certificate is provided in one file in PEM format with the .crt extension and the intermediate and root certificates are bundled together in PEM format in a second file named ca_bundle.crt.
+			  
+
+INSTALLING ON DIFFERENT PLATFORMS
+-----
+
+Nginx
+-----
+To install on nginx use the certificate format provided in the linux_bundle folder and follow
+the instructions from the knowledge base here: https://sectigo.com/resource-library/install-certificates-nginx-webserver
+
+
+Apache
+------
+To install the certificate on an Apache web server use the certificate format provided in the
+linux_bundle folder and follow the instructions from the knowledge base here: https://sectigo.com/resource-library/install-certificates-apache-mod-ssl-openssl
+
+
+Tomcat
+------
+To install the certificate on a Java Tomcat server use the certificate format provided in the
+individual folder and follow the instructions from the knowledge base here: https://sectigo.com/resource-library/install-certificates-java-based-web-servers-tomcat
+
+
+Others
+------
+For assistance with other platforms please refer to our knowledge base https://sectigo.com/resource-library/technical-documents?search=Install+Certificate&resourceProduct=488559
